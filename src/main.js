@@ -9,7 +9,10 @@ Vue.config.productionTip = false
 import FastClick from 'fastclick'
 FastClick.attach(document.body);
 
-import './assets/css/reset.css'
+//css
+import 'css/reset.css'
+import 'css/iconfont.css'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
