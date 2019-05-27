@@ -17,7 +17,7 @@
   </div>
 </template>
 <script>
-//  import {mapState} from 'vuex'
+  import {mapState} from 'vuex'
   import HomeHeader from './pages/Header'
   import HomeSwiper from './pages/Swiper'
   import HomeIcons from './pages/Icons'
@@ -48,7 +48,7 @@
       }
     },
     computed:{
-//      ...mapState(['city'])
+      ...mapState(['city'])
     },
     methods:{
       getHttp(){
@@ -56,13 +56,13 @@
           .then((res)=>{
             const data = res.data.data;
             data.forEach((item,index)=>{
-//              if(item.city==this.city){
+              if(item.city==this.city){
                 this.swiperList=item.swiperList;
                 this.iconsList=item.iconsList;
                 this.hotList=item.hotList;
                 this.likeList=item.likeList;
                 this.vacationList=item.vacationList;
-//              }
+              }
             })
 
           })

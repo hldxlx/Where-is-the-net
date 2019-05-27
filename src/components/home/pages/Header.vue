@@ -12,20 +12,20 @@
 			输入城市/景点/游玩主题
 		</div>
 		<div class='header-right'>
-			<!--<router-link to='/city'>-->
-				<!--{{city}}<span class='iconfont'>&#xe6aa;</span>-->
-			<!--</router-link>-->
+			<router-link to='/city'>
+				{{city}}<span class='iconfont'>&#xe6aa;</span>
+			</router-link>
 		</div>
 
 
 	</div>
 </template>
 <script type="text/javascript">
-//import {mapState} from 'vuex'
+import {mapState} from 'vuex'
 export default {
-//	computed:{
-//		...mapState(['city'])
-//	}
+	computed:{
+		...mapState(['city'])
+	}
 }
 
 </script>
